@@ -1,0 +1,87 @@
+/* src/Dashboard.module.css */
+.container {
+    font-family: 'Arial, sans-serif';
+    background-color: #f0f2f5;
+    min-height: 100vh;
+  }
+  
+  .content {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .addButton {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .addButton:hover {
+    background-color: #45a049;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table thead {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .table th, .table td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .table tbody tr {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .editButton, .deleteButton {
+    padding: 8px 12px;
+    margin-right: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .editButton {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  
+  .editButton:hover {
+    background-color: #e0a800;
+  }
+  
+  .deleteButton {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c82333;
+  }
+  

@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Signup from './Signup';
+import Callback from './Callback';
+import Dashboard from './Dashboard';
+import AddEntry from './AddEntry';
+import EditEntry from './EditEntry';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/callback" element={<Callback />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/add" element={<AddEntry />} />
+        <Route path="/edit/:entryId" element={<EditEntry />} />
+        <Route
+          path="/"
+          element={
+            <div>
+              <h1>Welcome to the Password Vault</h1>
+              <a href="/signup">Login / Sign Up</a>
+            </div>
+          }
+        />
+        {/* Add other routes as needed */}
+      </Routes>
+    </Router>
   );
 }
 
